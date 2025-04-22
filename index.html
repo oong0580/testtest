@@ -10,9 +10,9 @@
         html, body {
             margin: 0;
             padding: 0;
-            background: black;
             width: 100%;
             height: 100%;
+            background: black;
             overflow: hidden;
         }
 
@@ -26,14 +26,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            background: black;
         }
 
         canvas#unity-canvas {
             aspect-ratio: 9 / 16;
-            width: auto;
-            height: 100%;
             max-height: 100vh;
             max-width: calc(100vh * 9 / 16);
+            width: auto;
+            height: 100%;
+            display: block;
         }
     </style>
 
@@ -90,9 +92,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Build.data.gz",
-        frameworkUrl: buildUrl + "/Build.framework.js.gz",
-        codeUrl: buildUrl + "/Build.wasm.gz",
+        dataUrl: buildUrl + "/Build.data.br",
+        frameworkUrl: buildUrl + "/Build.framework.js.br",
+        codeUrl: buildUrl + "/Build.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Millionfy",
         productName: "HyperRacing",
